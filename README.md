@@ -1,2 +1,4 @@
 # SGF-Standalone-installer
-Installer script plus files for SGF Standalone (need Release build from repository SGF-WinSize)
+Windows Installer script plus files for SGF Standalone (need Release build from repository SGF-WinSize)
+
+The Installer Script will need InnoSetup software (free).
