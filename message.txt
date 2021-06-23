@@ -1,0 +1,49 @@
+SGF - Sistema Gestione Finanziaria
+Versione "Standalone"
+
+LEGGERE CON ATTENZIONE!
+
+**** NOVITA' Versione 1.2 - 23/06/2021 ****
+
+Ho modificato l'app di configurazione della dimensione finestra "SGF WinSize" aggiungendo
+il menu' "Trasparenza" dove vi sono 4 livelli di trasparenza della finestra (tasti F5-F8)
+e un box informativo (tasto F10) utili per dimensionare la finestra di SGF al meglio.
+Infatti basta aprire "SGF Standalone" regolarmente aprire poi "SGF WinSize" impostare un
+livello di trasparenza adeguato, sovrappore la finestra e regolarla al meglio (consiglio di
+lasciare almeno 2/3cm a destra e sotto extra per ovviare al problema delle finestrelle popup
+di SGF che ogni tanto compaiono in posti improbabili e non raggiungibili bloccando di fatto
+l'uso dell'applicazione). Ricordo che, in genere, questa operazione va fatta al massimo una
+volta sola all'inizio per impostare una dimensione giusta per il PC su cui e' stata appena 
+conclusa l'installazione.
+
+Nel processo di installatazione e' stata migliorata la rilevazione della versione di 
+JAVA installata. Ora non dovrebbe piu' comparire il box che richiede Java perche' non rilevato.
+
+**** NOVITA' Versione 1.1 - 12/02/2021 ****
+
+Aggiunta un'app per la configurazione automatica della dimensione della finestra di "SGF Standalone" 
+pari all'area utile del desktop dell'utente. La procedura avverra' automaticamente durante 
+l'installazione (grazie al collega Giuseppe Maltese per aver fatto presente il problema).
+E' possibile comunque avviare l'app (disponibile nel menu "Start") come Amministratore per poter
+regolare le dimensioni della finestra a piacimento.
+L'app si e' resa necessaria perche' purtroppo le form Java cosi' come sono state configurate dagli sviluppatori di SGF non sono indipendenti dalla risoluzione/densita' (DPI).
+Cio' rende la dimensione della finestra variabile a seconda della combinazione risoluzione/densita' di ciascuna postazione/utente.
+
+**** A COSA SERVE? *****
+
+Sappiamo tutti che oramai il plugin Java nel browser e' cosa passata, solo Internet Explorer e'
+rimasto come ultimo baluardo di questa ormaia sorpassata e insicura tecnologia.
+Questo installatore creera' uno script per l'avvio dell' applicazione SGF come App Desktop
+senza necessita' del browser Internet Explorer.
+L'installer creera' un gruppo nel menu applicazioni e l'icona sul desktop di tutti gli utenti del
+computer...bastera', finalmente, un semplice doppio-click!
+
+Inoltre inserira' sotto <Windows>\Sun\Java\Depolyment i file globali di configurazione del
+plugin Java con tutte le esclusioni. In caso dovesse essere necessario aggiungere altre
+esclusioni modificare il file exception.sites presente nella cartella indicata precedentemente.
+Le impostazioni saranno operative per TUTTI GLI UTENTI del computer.
+L'installer inoltre verifichera' la presenza di una JRE/JDK almeno nella versione 1.6.25 non importa
+se a 32 o 64-bit. Si consiglia comunque l'uso del piu' recente aggiornamento della JRE 1.8.
+
+Grazie per l'attenzione.
+Direzione VV.F. Abruzzo

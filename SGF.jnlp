@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- JNLP File to test webstart with Forms Application -->  
+<jnlp spec="1.7+" codebase="http://sgfweb.dipvvf.it/forms/java">  
+	<information>  
+		<title>SGF - Sistema Gestione Finanziaria</title>  
+		<vendor>Oracle Corporation</vendor>  
+		<description>Dip VVF - Sistema Gestione Finanziaria</description>  
+	</information>  
+	<security>  
+		<all-permissions/>  
+	</security>  
+	<resources>  
+		<j2se version="1.6+"/>  
+		<jar href="sgfgif.jar"/>
+		<jar href="frmall.jar"/>  
+		<jar href="frmwebutil.jar"/> 
+		<jar href="jacob.jar"/> 
+	</resources>  
+	<applet-desc name="SGF - Sistema Gestione Finanziaria" main-class="oracle.forms.engine.Main" width="x" height="x">   
+                 <param name="isResizable" value=true" />
+		<param name="serverURL" value="/forms/lservlet?ifcfs=/forms/frmservlet?config=sgf&#38;ifsessid=formsapp.725081&#38;acceptLanguage=it-IT"/>  
+		<param name="serverArgs" value="escapeParams=true module=SGF_INIT.fmx userid=  debug=no host=vfsgf02.dipvvf.it port=8090 usesdi=yes buffer_records= debug_messages= array= obr=no query_only= quiet= render= record= tracegroup= log= term=/SGF/ESEGUIBILI/FORMS/fmrwebi.res"/>
+		<param name="lookAndFeel" value="generic"/>
+		<param name="separateFrame" VALUE="false" />
+		<param name="splashScreen"  VALUE="false" />
+		<param name="background"  VALUE="no" />
+		<param name="colorScheme"  VALUE="teal" />
+		<param name="serverApp" VALUE="default" />
+		<param name="logo" VALUE="no" />
+		<param name="imageBase" VALUE="codeBase" />
+		<param name="formsMessageListener" VALUE="" />
+		<param name="recordFileName" VALUE="" />
+		<param name="EndUserMonitoringEnabled" VALUE="false" />
+		<param name="EndUserMonitoringURL" VALUE="" />
+		<param name="heartBeat" VALUE="" />
+		<param name="MaxEventWait" VALUE="" />
+		<param name="allowAlertClipboard" VALUE="true" />
+		<param name="disableValidateClipboard" VALUE="false" />
+		<param name="enableJavascriptEvent" VALUE="true" />
+		<param name="MAYSCRIPT" VALUE="true" />
+		<param name="digitSubstitution" VALUE="context" />
+		<param name="legacy_lifecycle" VALUE="false" />
+		<param name="JavaScriptBlocksHeartBeat" VALUE="false" />
+		<param name="highContrast" VALUE="false" />
+		<param name="disableMDIScrollbars" VALUE="" />
+		<param name="clientDPI" VALUE="100" />
+	</applet-desc>  
+</jnlp>
